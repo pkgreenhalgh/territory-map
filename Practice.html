@@ -1,14 +1,9 @@
-<html>
+<html lang="en">
 <head>
     <title>Leaflet Territory Mapping Tool</title>
     <meta charset="utf-8" />
     <style>
         #map { height: 80vh; width: 100%; }
-        #controls { padding: 10px; }
-        #territoryList { margin-top: 10px; }
-        .territory-item { display: flex; align-items: center; margin-bottom: 5px; }
-        .territory-item input[type="checkbox"] { margin-right: 5px; }
-        .territory-item button { margin-left: 10px; }
     </style>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -20,9 +15,8 @@
 </head>
 
 <body>
-  <h2>Leaflet Territory Mapping Tool </h2>
+  <h1>Leaflet Territory Mapping Tool </h1>
   <div id="map"></div>
-  #map {height: 180px;}
   <script>
   var map = L.map('map').setView([51.505, -0.09], 13);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
